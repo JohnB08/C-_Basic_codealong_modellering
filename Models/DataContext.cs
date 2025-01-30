@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace C__Basic_codealong_modellering.Models;
 /* Her lager vi en modell for hele filen vår. */
@@ -11,6 +12,7 @@ public class DataContext
     {
         /* Her bruker vi ReadLines for å lese filen en linje om gangen, hver linje blir separert ut som sin egen string.  */
        var rawData = File.ReadLines("2018_Central_Park_Squirrel_Census_-_Squirrel_Data_20250120.csv");
+
        
        /* Her bruker vi noe som heter LinQ for å lage listen av squirrelData. 
        Vi skal kikke nærmere på LinQ neste uke, men her er en liten smakebit.
